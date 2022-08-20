@@ -1,0 +1,243 @@
+/* Defaults */
+
+nav, header, footer{
+  display: block;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  line-height: 1;
+  margin: 0;
+}
+
+.container{
+  width: 100%;
+  margin: auto;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.row{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.row::after{
+  display: table;
+  clear: both;
+  content: "";
+}
+
+/* Nav Bar Styling */
+
+.main_nav{
+  width: 100%;
+  margin: 0;
+}
+
+.main_nav_items{
+  background-color: #012456;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.main_nav_item{
+  list-style-type: none;
+  float: left;
+}
+
+.main_nav_right{
+  float: right;
+}
+
+.main_nav_item a{
+  display: block;
+  text-decoration: none;
+  min-height: 16px;
+  text-align: center;
+  padding: 14px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.main_nav_item a:hover{
+  background-color: slategrey;
+  color: #012456;
+}
+
+.dropdown_icon{
+  display: none;
+}
+
+.col_1{
+width: 8.33%;
+}
+
+.col_2{
+width: 16:66%;
+}
+
+.col_3{
+width: 25%;
+}
+
+.col_4{
+width: 33.33%;
+}
+
+.col_5{
+width: 41.66%;
+}
+
+.col_6{
+width: 50%;
+}
+
+.col_7{
+width: 58.33%;
+}
+
+.col_8{
+width: 66.66%;
+}
+
+.col_9{
+width: 75%;
+}
+
+.col_10{
+width: 83.33%;
+}
+
+.col_11{
+width: 91.66%;
+}
+
+.col_12{
+width: 100%;
+}
+
+/* Custom Styles */
+
+#section_1_gradient{
+  background: slategrey;
+  background: -webkit-linear-gradient(#707b7c,  #616a6b);
+  background: -o-linear-gradient(#707b7c, #616a6b);
+  background: -moz-linear-gradient(#707b7c, #616a6b);
+  background: linear-gradient(#707b7c, #616a6b);
+}
+
+.logo{
+  width: 19rem;
+  height: 19rem;
+  border-radius: 0.5rem;
+}
+
+div.leftside_col{
+  margin-left: 30%;
+}
+
+div.rightside_col{
+  margin-left: 15%;
+}
+
+.large{
+  color: #eaecee;
+  font-size: 3.5rem;
+  margin: 0;
+  line-height: 4.7rem;
+}
+
+.section_2_header{
+  font-size: 4.7rem;
+  text-align: center;
+}
+
+.contact_header{
+  font-size: 4rem;
+  text-align: center;
+  color: slategrey;
+}
+
+.profile_pic{
+height: 25rem;
+width: 22rem;
+border-radius: 0.5rem;
+}
+
+.contact_info{
+  font-size: 1.8rem;
+}
+
+footer.main_footer{
+  background: #707b7c;
+  padding-left: 10%;
+}
+
+footer.main_footer h1{
+  color: white;
+  font-size: 35px;
+}
+
+footer.main_footer ul{
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0;
+}
+
+footer.main_footer li a{
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+footer.main_footer li a:hover{
+  color: #012456;
+}
+
+.copyright{
+  color: white;
+  text-align: center;
+}
+
+/* mobile */
+
+@media screen and (max-width: 42.5rem){
+ul.main_nav_items li:not(:nth-child(1)){
+  display: none;
+}
+
+ul.main_nav_items li.dropdown_icon{
+  display: block;
+  float: right;
+}
+
+ul.main_nav_items.responsive li.dropdown_icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+ul.main_nav_items.responsive{
+  position: relative;
+}
+
+ul.main_nav_items.responsive li{
+  display: inline;
+  float: none;
+}
+
+ul.main_nav_items.responsive li a{
+  display: block;
+  text-align: left;
+}
+
+}
